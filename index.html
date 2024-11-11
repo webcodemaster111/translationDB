@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Memory Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Translation Memory Generator</h1>
+    <div class="upload-container">
+        <div class="upload-box" id="koreanBox">
+            <label for="koreanFile">Korean</label>
+            <input type="file" id="koreanFile" accept=".html,.dita">
+        </div>
+        <div class="upload-box" id="englishBox">
+            <label for="englishFile">English</label>
+            <input type="file" id="englishFile" accept=".html,.dita">
+        </div>
+    </div>
+    <button id="generateButton">Generate translation memory</button>
+    <button id="downloadButton" style="display: none;">Download translation memory</button>
+</body>
+
+</html>

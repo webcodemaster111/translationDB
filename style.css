@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin: 0 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.upload-box label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.upload-box input[type="file"] {
+  display: none;
+}
+
+.upload-box.dragover {
+  border-color: #000;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
