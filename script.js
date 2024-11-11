@@ -30,7 +30,7 @@ function parseDITAContent(content) {
     const decodedContent = decoder.decode(content);
     const parser = new DOMParser();
     const doc = parser.parseFromString(decodedContent, 'application/xml');
-    const texts = Array.from(doc.querySelectorAll('p')).map(p => p.textContent.trim());
+    const texts = Array.from(doc.querySelectorAll('p')).map(p => p.textContent.trim().split('\n')).flat();
     return texts;
 }
 
